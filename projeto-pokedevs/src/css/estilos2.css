@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Popins, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    text-align: center;
+    background-image: url("/projeto-pokedevs/src/imagens/fundo4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #374760;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 20px; 
+    padding-bottom: 50px;
+  }
+  
+  main img {
+    width: 100px;
+    height: auto;
+    transition: transform 5s ease, opacity 1s ease; 
+    border-radius: 70%;
+  }
+
+  main img.grow {
+    transform: scale(80) rotate(360deg);
+    opacity: 0; 
+
+  }
+  
+  .descricao {
+    text-align: left; 
+    width: 700px; 
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+   /*  border: 2px dotted; */
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .descricao span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, rgb(0, 102, 255));
+    animation: girar1 2s linear infinite;
+  }
+  
+  @keyframes girar1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .descricao span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #ff1e00);
+    animation: girar2 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes girar2 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .descricao span:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, transparent, #ff0);
+    animation: girar3 2s linear infinite;
+  }
+  
+  @keyframes girar3 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .descricao span:nth-of-type(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #00ff6a);
+    animation: girar4 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes girar4 {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .descricao p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 1.05s;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
