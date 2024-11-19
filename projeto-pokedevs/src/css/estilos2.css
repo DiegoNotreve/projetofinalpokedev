@@ -8,7 +8,7 @@
   body {
     height: 100vh;
     text-align: center;
-    background-image: url("/projeto-pokedevs/src/imagens/fundo4.jpg");
+    background-image: url("../imagens/fundo4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
