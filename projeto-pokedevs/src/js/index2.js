@@ -10,6 +10,6 @@ document.getElementById('transitionButton').addEventListener('click', function()
   
   // Espera a animação de crescimento antes de redirecionar
   setTimeout(function() {
-    window.location.href = "../page2.html"; // Redireciona para a nova página
+    window.location.href = "../index2.html"; // Redireciona para a nova página
   }, 1000);
 });
